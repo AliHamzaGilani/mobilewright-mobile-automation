@@ -1,17 +1,18 @@
 import { BaseScreen } from './BaseScreen';
 
 export class LoginScreen extends BaseScreen {
-  // The sample app labels its controls with "test-*" accessibility ids.
+  // The sample app labels its controls with "test-*" accessibility labels (Android content-desc).
+  // LOGIN is a plain ViewGroup with no button role, so labels are the stable hook.
   get username() {
-    return this.screen.getByRole('textfield', { name: 'test-Username' });
+    return this.screen.getByLabel('test-Username');
   }
 
   get password() {
-    return this.screen.getByRole('textfield', { name: 'test-Password' });
+    return this.screen.getByLabel('test-Password');
   }
 
   get loginButton() {
-    return this.screen.getByRole('button', { name: 'test-LOGIN' });
+    return this.screen.getByLabel('test-LOGIN');
   }
 
   errorText(message: string) {

@@ -11,7 +11,7 @@ Mobilewright brings the Playwright developer experience to native apps: the same
 ## Highlights
 
 - **Screen Object Model** with custom fixtures (`loginScreen`, `productsScreen`) injected into every test
-- Semantic locators (role + accessible name) instead of XPath
+- Accessibility-label locators, checked against the live view tree; no XPath
 - **Data-driven** negative login tests generated from one table
 - **Tag-based suites**: `@smoke` and `@regression`
 - **GitHub Actions** boots an Android emulator and runs the suite: smoke on push and PR, full regression nightly
