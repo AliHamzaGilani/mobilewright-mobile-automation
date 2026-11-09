@@ -6,6 +6,8 @@ export default defineConfig({
   retries: process.env.CI ? 1 : 0,
   workers: 1,
   reporter: [['list'], ['html']],
+  // Attach the accessibility tree to failed tests, so locators can be fixed from the report.
+  viewTree: 'on-failure',
   use: {
     actionTimeout: 10_000,
     appLaunchTimeout: 30_000,
