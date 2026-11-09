@@ -1,0 +1,7 @@
+node_modules/
+apps/
+*.apk
+test-results/
+mobilewright-report/
+playwright-report/
+.env

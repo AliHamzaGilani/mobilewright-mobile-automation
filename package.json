@@ -1,0 +1,23 @@
+{
+  "name": "mobilewright-mobile-automation",
+  "version": "1.0.0",
+  "description": "Mobilewright + TypeScript Android automation for the Sauce Labs sample app, using screen objects and Playwright-style fixtures.",
+  "private": true,
+  "scripts": {
+    "app:download": "bash scripts/download-app.sh",
+    "doctor": "mobilewright doctor",
+    "test": "mobilewright test",
+    "test:smoke": "mobilewright test --grep @smoke",
+    "inspect": "mobilewright inspect",
+    "report": "mobilewright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "author": "Ali Hamza Gilani",
+  "license": "MIT",
+  "devDependencies": {
+    "@mobilewright/test": "^0.0.53",
+    "@types/node": "^22.10.0",
+    "mobilewright": "^0.0.53",
+    "typescript": "^5.7.0"
+  }
+}
